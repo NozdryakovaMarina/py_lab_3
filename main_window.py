@@ -17,7 +17,8 @@ class MainWindow(QWidget):
         self.setWindowTitle('~GUI&IMAGE~')
         self.setWindowIcon(QIcon('img/image.png'))
         self.setCentralWidget(QWidget())
-        
+        but_brown = QPushButton()
+
 
 
 def main() -> None:

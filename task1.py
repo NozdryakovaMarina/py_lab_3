@@ -12,7 +12,6 @@ def create_csv(type_name: str, csv_name: str, dir_name: str) -> None:
     img_f = os.listdir(os.path.join(abs_path, type_name))
     with open(csv_name, 'a') as f_csv:
         writer = csv.writer(f_csv, delimiter=',', lineterminator='\r')
-        writer.writerow(["Absolute path", "Relative path", "Class name"])
         for img in img_f:
             writer.writerow([os.path.join(abs_path, type_name, img),
                              os.path.join(rel_path, type_name, img), type_name])
